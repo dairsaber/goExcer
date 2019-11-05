@@ -1,6 +1,8 @@
 package tools
 
 import "fmt"
-func MyPrint(str string){
+
+// MyPrint is a test function
+func MyPrint(str string) {
 	fmt.Println(str)
 }
