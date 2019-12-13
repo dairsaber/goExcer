@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="84d89e6e-d075-45a4-ace8-561db0f570c3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/go.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -69,9 +67,9 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Color Scheme Font" />
   </component>
-  <component name="RunManager" selected="Go Build.go build singleChannel.go">
+  <component name="RunManager" selected="Go Build.go build timer.go">
     <configuration name="go build channelWithCap.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="demo" />
       <working_directory value="$PROJECT_DIR$/" />
@@ -85,14 +83,6 @@
       <working_directory value="$PROJECT_DIR$/" />
       <kind value="FILE" />
       <filePath value="$PROJECT_DIR$/channel.go" />
-      <directory value="$PROJECT_DIR$/" />
-      <method v="2" />
-    </configuration>
-    <configuration name="go build goexit.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
-      <module name="demo" />
-      <working_directory value="$PROJECT_DIR$/" />
-      <kind value="FILE" />
-      <filePath value="$PROJECT_DIR$/goexit.go" />
       <directory value="$PROJECT_DIR$/" />
       <method v="2" />
     </configuration>
@@ -112,20 +102,28 @@
       <directory value="$PROJECT_DIR$/" />
       <method v="2" />
     </configuration>
+    <configuration name="go build timer.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="demo" />
+      <working_directory value="$PROJECT_DIR$/" />
+      <kind value="FILE" />
+      <filePath value="$PROJECT_DIR$/timer.go" />
+      <directory value="$PROJECT_DIR$/" />
+      <method v="2" />
+    </configuration>
     <list>
       <item itemvalue="Go Build.go build channel.go" />
       <item itemvalue="Go Build.go build channelWithCap.go" />
-      <item itemvalue="Go Build.go build goexit.go" />
       <item itemvalue="Go Build.go build index.go" />
       <item itemvalue="Go Build.go build singleChannel.go" />
+      <item itemvalue="Go Build.go build timer.go" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Go Build.go build timer.go" />
         <item itemvalue="Go Build.go build singleChannel.go" />
         <item itemvalue="Go Build.go build channelWithCap.go" />
         <item itemvalue="Go Build.go build channel.go" />
         <item itemvalue="Go Build.go build index.go" />
-        <item itemvalue="Go Build.go build goexit.go" />
       </list>
     </recent_temporary>
   </component>
@@ -188,29 +186,29 @@
       <screen x="0" y="0" width="2194" height="1194" />
     </state>
     <state x="878" y="338" key="FileChooserDialogImpl/0.0.2194.1194@0.0.2194.1194" timestamp="1576249200269" />
-    <state width="2151" height="333" key="GridCell.Tab.0.bottom" timestamp="1576249489774">
+    <state width="2151" height="333" key="GridCell.Tab.0.bottom" timestamp="1576251736082">
       <screen x="0" y="0" width="2194" height="1194" />
     </state>
-    <state width="2151" height="333" key="GridCell.Tab.0.bottom/0.0.2194.1194@0.0.2194.1194" timestamp="1576249489774" />
-    <state width="2151" height="333" key="GridCell.Tab.0.center" timestamp="1576249489774">
+    <state width="2151" height="333" key="GridCell.Tab.0.bottom/0.0.2194.1194@0.0.2194.1194" timestamp="1576251736082" />
+    <state width="2151" height="333" key="GridCell.Tab.0.center" timestamp="1576251736082">
       <screen x="0" y="0" width="2194" height="1194" />
     </state>
-    <state width="2151" height="333" key="GridCell.Tab.0.center/0.0.2194.1194@0.0.2194.1194" timestamp="1576249489774" />
-    <state width="2151" height="333" key="GridCell.Tab.0.left" timestamp="1576249489774">
+    <state width="2151" height="333" key="GridCell.Tab.0.center/0.0.2194.1194@0.0.2194.1194" timestamp="1576251736082" />
+    <state width="2151" height="333" key="GridCell.Tab.0.left" timestamp="1576251736082">
       <screen x="0" y="0" width="2194" height="1194" />
     </state>
-    <state width="2151" height="333" key="GridCell.Tab.0.left/0.0.2194.1194@0.0.2194.1194" timestamp="1576249489774" />
-    <state width="2151" height="333" key="GridCell.Tab.0.right" timestamp="1576249489774">
+    <state width="2151" height="333" key="GridCell.Tab.0.left/0.0.2194.1194@0.0.2194.1194" timestamp="1576251736082" />
+    <state width="2151" height="333" key="GridCell.Tab.0.right" timestamp="1576251736082">
       <screen x="0" y="0" width="2194" height="1194" />
     </state>
-    <state width="2151" height="333" key="GridCell.Tab.0.right/0.0.2194.1194@0.0.2194.1194" timestamp="1576249489774" />
-    <state x="659" y="363" key="SettingsEditor" timestamp="1576249889726">
+    <state width="2151" height="333" key="GridCell.Tab.0.right/0.0.2194.1194@0.0.2194.1194" timestamp="1576251736082" />
+    <state x="659" y="363" key="SettingsEditor" timestamp="1576251922697">
       <screen x="0" y="0" width="2194" height="1194" />
     </state>
-    <state x="659" y="363" key="SettingsEditor/0.0.2194.1194@0.0.2194.1194" timestamp="1576249889726" />
-    <state x="760" y="264" width="672" height="678" key="search.everywhere.popup" timestamp="1576249901663">
+    <state x="659" y="363" key="SettingsEditor/0.0.2194.1194@0.0.2194.1194" timestamp="1576251922697" />
+    <state x="760" y="264" width="672" height="678" key="search.everywhere.popup" timestamp="1576251421614">
       <screen x="0" y="0" width="2194" height="1194" />
     </state>
-    <state x="760" y="264" width="672" height="678" key="search.everywhere.popup/0.0.2194.1194@0.0.2194.1194" timestamp="1576249901663" />
+    <state x="760" y="264" width="672" height="678" key="search.everywhere.popup/0.0.2194.1194@0.0.2194.1194" timestamp="1576251421614" />
   </component>
 </project>
