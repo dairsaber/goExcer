@@ -6,8 +6,9 @@ import (
 )
 
 func main() {
+	quit := make(chan bool)
 	//NewTicker定时器的一般用法
-	myTimer := time.NewTicker(time.Second * 3)
+	myTimer := time.NewTimer(time.Second * 3)
 	ch := myTimer.C
 	currentTime := time.Now().Second()
 	fmt.Println(currentTime)
@@ -20,13 +21,27 @@ func main() {
 	fmt.Println(time.Now().Second())
 
 	//中断定时器
-	myTimer2 := time.NewTicker(time.Second * 5)
+	myTimer2 := time.NewTimer(time.Second * 5)
 	go func() {
 		<-myTimer2.C
 		fmt.Println("我是子go程！")
 	}()
-	time.Sleep(time.Second*2)
+	time.Sleep(time.Second * 2)
 	myTimer2.Stop()
 	fmt.Printf("我是主go程中断myTimer2，所以子go程中无法执行，也就是不会打印那段《我是子go程！》的文字！")
-
+	//循环定时
+	times := 0
+	ticker := time.NewTicker(time.Second)
+	go func() {
+		for {
+			nowTime := <-ticker.C
+			fmt.Println("nowTime is ", nowTime.Second(), times)
+			if times == 8 {
+				ticker.Stop()
+				quit <- false //然主程序一直阻塞 ,不销毁子go程
+			}
+			times++
+		}
+	}()
+	<-quit
 }
