@@ -13,7 +13,7 @@ func getData(ch chan<- int) {
 	close(ch)
 }
 
-func listenner(dataCh <-chan int, quit <-chan bool) {
+func listener(dataCh <-chan int, quit <-chan bool) {
 	for {
 		select {
 		case num := <-dataCh:
@@ -32,9 +32,9 @@ func listenner(dataCh <-chan int, quit <-chan bool) {
 }
 
 func main() {
-	datach := make(chan int)
+	dataChannel := make(chan int)
 	quit := make(chan bool)
-	go listenner(datach, quit)
-	go getData(datach)
+	go listener(dataChannel, quit)
+	go getData(dataChannel)
 	quit <- true
 }
