@@ -43,7 +43,7 @@ func customer01(out <-chan int, idx int) {
 func main() {
 	rand.Seed(time.Now().UnixNano())
 	cond.L = new(sync.Mutex)
-	goodsCh := make(chan int, 5)//当这边没有给5个缓冲区的话或者和上边的cond条件不一致的话就可能出现死锁
+	goodsCh := make(chan int, 5) //当这边没有给5个缓冲区的话或者和上边的cond条件不一致的话就可能出现死锁
 
 	quit := make(chan bool)
 
@@ -55,4 +55,6 @@ func main() {
 		go customer01(goodsCh, i)
 	}
 	quit <- true
+	time.Sleep(time.Second * 10)
+	<-quit
 }
