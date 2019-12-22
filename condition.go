@@ -45,8 +45,6 @@ func main() {
 	cond.L = new(sync.Mutex)
 	goodsCh := make(chan int, 5) //当这边没有给5个缓冲区的话或者和上边的cond条件不一致的话就可能出现死锁
 
-	quit := make(chan bool)
-
 	for i := 0; i < 5; i++ {
 		go producer01(goodsCh, i)
 
@@ -54,7 +52,5 @@ func main() {
 	for i := 0; i < 5; i++ {
 		go customer01(goodsCh, i)
 	}
-	quit <- true
 	time.Sleep(time.Second * 10)
-	<-quit
 }
