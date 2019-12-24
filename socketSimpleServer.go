@@ -28,4 +28,5 @@ func main() {
 		fmt.Println("读取客户端数据失败！===>", err)
 	}
 	fmt.Println("客户端数据为：", string(buff[:n]))
+	conn.Write(buff[:n])
 }
