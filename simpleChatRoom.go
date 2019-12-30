@@ -16,8 +16,8 @@ type Client struct {
 }
 
 var clientList map[string]Client
-
-func saveClient(name string, addr string) (currentClient *Client) {
+//SaveClient 保存对应的客户端
+func SaveClient(name string, addr string) (currentClient *Client) {
 	currentClient = new(Client)
 	currentClient.Name = name
 	currentClient.Addr = addr
@@ -25,12 +25,13 @@ func saveClient(name string, addr string) (currentClient *Client) {
 	clientList[addr] = *currentClient
 	return
 }
+//MakeMsg 生成对应的消息
 func MakeMsg(clnt *Client, content string) (buf string) {
 	buf = "[" + clnt.Name + "]" + content+"\n"
 	return
 
 }
-
+// WriteToClient 将详细写给客户端
 func WriteToClient(client *Client, conn net.Conn) {
 	for {
 		msg := <-client.C
@@ -41,12 +42,12 @@ func WriteToClient(client *Client, conn net.Conn) {
 		}
 	}
 }
-
+//HandlerClientConnect 客户端连接的处理函数
 func HandlerClientConnect(conn net.Conn) {
 	defer conn.Close()
 
 	remoteAddr := conn.RemoteAddr().String()
-	currentClient := saveClient(remoteAddr, remoteAddr)
+	currentClient := SaveClient(remoteAddr, remoteAddr)
 	currentMsg := MakeMsg(currentClient, "login")
 	isQuit := make(chan bool)
 	hasData := make(chan bool)
@@ -68,16 +69,17 @@ func HandlerClientConnect(conn net.Conn) {
 	}
 
 }
+//ReName 更新客户端昵称.
 func ReName(client *Client, newName string) (oldName string) {
 	oldName = client.Name
 	client.Name = newName
 	return
 }
-
+//RemoveClient 移除客户端
 func RemoveClient(key string) {
 	delete(clientList, key)
 }
-
+//WriteClientMsg 生成对应操作的message，并将message存入全局变量中
 func WriteClientMsg(conn net.Conn, currentClient *Client, isLogout chan<- bool, hasData chan<- bool) {
 	buf := make([]byte, 4096)
 	for {
@@ -102,7 +104,7 @@ func WriteClientMsg(conn net.Conn, currentClient *Client, isLogout chan<- bool, 
 		hasData <- true
 	}
 }
-
+//Manager 监视全局变量message channel 并将消息取出发送给在线的客户端
 func Manager() {
 	clientList = make(map[string]Client)
 	for {
