@@ -33,12 +33,19 @@ func MakeMsg(clnt *Client, content string) (buf string) {
 }
 // WriteToClient 将详细写给客户端
 func WriteToClient(client *Client, conn net.Conn) {
-	for {
-		msg := <-client.C
+	// for {
+	// 	msg := <-client.C
+	// 	_, err := conn.Write([]byte(msg))
+	// 	if err != nil {
+	// 		fmt.Println("发送给客户端出错！")
+	// 		continue
+	// 	}
+	// }
+	for msg := range client.C {//简便写法
 		_, err := conn.Write([]byte(msg))
 		if err != nil {
 			fmt.Println("发送给客户端出错！")
-			continue
+			return
 		}
 	}
 }
@@ -59,11 +66,11 @@ func HandlerClientConnect(conn net.Conn) {
 	for {
 		select {
 		case <-isQuit:
-			RemoveClient(remoteAddr)
+			RemoveClient(remoteAddr,currentClient)
 		case <-hasData: //重置下面的定时器
 		case <-time.After(time.Second * 60):
-			RemoveClient(remoteAddr)
 			message <- MakeMsg(currentClient, "长时间为发言已被提出群聊")
+			RemoveClient(remoteAddr,currentClient)
 			return
 		}
 	}
@@ -76,7 +83,9 @@ func ReName(client *Client, newName string) (oldName string) {
 	return
 }
 //RemoveClient 移除客户端
-func RemoveClient(key string) {
+func RemoveClient(key string,client *Client) {
+	//关闭通道这样会让使用改通道的go程终止并推出
+	close(client.C)
 	delete(clientList, key)
 }
 //WriteClientMsg 生成对应操作的message，并将message存入全局变量中
