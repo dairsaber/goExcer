@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="84d89e6e-d075-45a4-ace8-561db0f570c3" name="Default Changelist" comment="" />
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <list default="true" id="84d89e6e-d075-45a4-ace8-561db0f570c3" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/simpleChatRoom.go" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -25,37 +27,6 @@
   <component name="FavoritesManager">
     <favorites_list name="go" />
   </component>
-  <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file:///usr/local/go/src/net/udpsock.go">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="237">
-              <caret line="149" column="18" selection-start-line="149" selection-start-column="18" selection-end-line="149" selection-end-column="18" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file:///usr/local/go/src/strings/strings.go">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="16700">
-              <caret line="839" column="30" selection-start-line="839" selection-start-column="30" selection-end-line="839" selection-end-column="30" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file:///usr/local/go/src/builtin/builtin.go">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1400">
-              <caret line="70" column="5" selection-start-line="70" selection-start-column="5" selection-end-line="70" selection-end-column="5" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
-  </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
@@ -63,59 +34,13 @@
       </list>
     </option>
   </component>
-  <component name="FindInProjectRecents">
-    <replaceStrings>
-      <replace />
-    </replaceStrings>
-    <dirStrings>
-      <dir>$PROJECT_DIR$</dir>
-    </dirStrings>
-  </component>
   <component name="GOROOT" path="/usr/local/go" />
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="IdeDocumentHistory">
-    <option name="CHANGED_PATHS">
-      <list>
-        <option value="$PROJECT_DIR$/selectTimeout.go" />
-        <option value="$PROJECT_DIR$/mutex.go" />
-        <option value="$PROJECT_DIR$/condition.go" />
-        <option value="$PROJECT_DIR$/socket01.go" />
-        <option value="$PROJECT_DIR$/socketSimpleServer.go" />
-        <option value="$PROJECT_DIR$/socketSimpleClinet.go" />
-        <option value="$PROJECT_DIR$/socketParallelServer.go" />
-        <option value="$PROJECT_DIR$/socketClient.go" />
-        <option value="$PROJECT_DIR$/udpSimpleServer.go" />
-      </list>
-    </option>
-  </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="width" value="1440" />
-    <option name="height" value="900" />
-  </component>
   <component name="ProjectId" id="1UvtYXCx3TM8y8NgGcniYr9vPC2" />
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
-  </component>
-  <component name="ProjectView">
-    <navigator proportions="" version="1">
-      <foldersAlwaysOnTop value="true" />
-    </navigator>
-    <panes>
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="go" type="b2602c69:ProjectViewProjectNode" />
-              <item name="go" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-      <pane id="Scope" />
-    </panes>
   </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -138,24 +63,12 @@
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="terminal" />
   </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
-  </component>
-  <component name="RunManager" selected="Go Build.go build udpSimpleServer.go">
-    <configuration name="go build socket01.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Go Build.go build httpSimpleServer.go">
+    <configuration name="go build httpSimpleServer.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="demo" />
       <working_directory value="$PROJECT_DIR$/" />
       <kind value="FILE" />
-      <filePath value="$PROJECT_DIR$/socket01.go" />
+      <filePath value="$PROJECT_DIR$/httpSimpleServer.go" />
       <directory value="$PROJECT_DIR$/" />
       <method v="2" />
     </configuration>
@@ -192,19 +105,19 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Go Build.go build socket01.go" />
       <item itemvalue="Go Build.go build socketParallelServer.go" />
       <item itemvalue="Go Build.go build socketSimpleClinet.go" />
       <item itemvalue="Go Build.go build socketSimpleServer.go" />
       <item itemvalue="Go Build.go build udpSimpleServer.go" />
+      <item itemvalue="Go Build.go build httpSimpleServer.go" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Go Build.go build httpSimpleServer.go" />
         <item itemvalue="Go Build.go build udpSimpleServer.go" />
         <item itemvalue="Go Build.go build socketParallelServer.go" />
         <item itemvalue="Go Build.go build socketSimpleClinet.go" />
         <item itemvalue="Go Build.go build socketSimpleServer.go" />
-        <item itemvalue="Go Build.go build socket01.go" />
       </list>
     </recent_temporary>
   </component>
@@ -239,52 +152,6 @@
       <is-autoscroll-to-source value="true" />
     </todo-panel>
   </component>
-  <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1440" height="830" extended-state="6" />
-    <editor active="true" />
-    <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.20457797" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.3060241" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Database Changes" order="8" />
-      <window_info anchor="bottom" id="Version Control" order="9" />
-      <window_info anchor="bottom" id="Terminal" order="10" weight="0.29277107" />
-      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Database" order="3" />
-    </layout>
-    <layout-to-restore>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25679544" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.6578313" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Database Changes" order="8" />
-      <window_info anchor="bottom" id="Version Control" order="9" />
-      <window_info anchor="bottom" id="Terminal" order="10" weight="0.32891566" />
-      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Database" order="3" />
-    </layout-to-restore>
-  </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
@@ -318,6 +185,10 @@
       <screen x="0" y="0" width="2194" height="1194" />
     </state>
     <state x="845" y="317" key="#com.intellij.featureStatistics.actions.ShowFeatureUsageStatisticsDialog/0.0.2194.1194@0.0.2194.1194" timestamp="1576249580399" />
+    <state x="415" y="81" key="#go_build_udpSimpleServer.go" timestamp="1578319130112">
+      <screen x="0" y="23" width="1440" height="830" />
+    </state>
+    <state x="415" y="81" key="#go_build_udpSimpleServer.go/0.23.1440.830@0.23.1440.830" timestamp="1578319130112" />
     <state x="350" y="105" key="CommitChangelistDialog2" timestamp="1576333156985">
       <screen x="0" y="0" width="2194" height="1194" />
     </state>
@@ -327,25 +198,29 @@
     </state>
     <state x="878" y="338" key="FileChooserDialogImpl/0.0.2194.1194@0.0.2194.1194" timestamp="1576249200269" />
     <state x="878" y="338" key="FileChooserDialogImpl/3840.1080.1920.1010/0.0.2194.1194@0.0.2194.1194" timestamp="1576333117323" />
-    <state width="1447" height="311" key="GridCell.Tab.0.bottom" timestamp="1576333020143">
-      <screen x="0" y="0" width="2194" height="1194" />
+    <state width="1398" height="196" key="GridCell.Tab.0.bottom" timestamp="1578319702014">
+      <screen x="0" y="23" width="1440" height="830" />
     </state>
     <state width="2151" height="312" key="GridCell.Tab.0.bottom/0.0.2194.1194@0.0.2194.1194" timestamp="1576253240529" />
+    <state width="1398" height="196" key="GridCell.Tab.0.bottom/0.23.1440.830@0.23.1440.830" timestamp="1578319702014" />
     <state width="1447" height="311" key="GridCell.Tab.0.bottom/3840.1080.1920.1010/0.0.2194.1194@0.0.2194.1194" timestamp="1576333020143" />
-    <state width="1447" height="311" key="GridCell.Tab.0.center" timestamp="1576333020143">
-      <screen x="0" y="0" width="2194" height="1194" />
+    <state width="1398" height="196" key="GridCell.Tab.0.center" timestamp="1578319702013">
+      <screen x="0" y="23" width="1440" height="830" />
     </state>
     <state width="2151" height="312" key="GridCell.Tab.0.center/0.0.2194.1194@0.0.2194.1194" timestamp="1576253240529" />
+    <state width="1398" height="196" key="GridCell.Tab.0.center/0.23.1440.830@0.23.1440.830" timestamp="1578319702013" />
     <state width="1447" height="311" key="GridCell.Tab.0.center/3840.1080.1920.1010/0.0.2194.1194@0.0.2194.1194" timestamp="1576333020143" />
-    <state width="1447" height="311" key="GridCell.Tab.0.left" timestamp="1576333020143">
-      <screen x="0" y="0" width="2194" height="1194" />
+    <state width="1398" height="196" key="GridCell.Tab.0.left" timestamp="1578319702012">
+      <screen x="0" y="23" width="1440" height="830" />
     </state>
     <state width="2151" height="312" key="GridCell.Tab.0.left/0.0.2194.1194@0.0.2194.1194" timestamp="1576253240529" />
+    <state width="1398" height="196" key="GridCell.Tab.0.left/0.23.1440.830@0.23.1440.830" timestamp="1578319702012" />
     <state width="1447" height="311" key="GridCell.Tab.0.left/3840.1080.1920.1010/0.0.2194.1194@0.0.2194.1194" timestamp="1576333020143" />
-    <state width="1447" height="311" key="GridCell.Tab.0.right" timestamp="1576333020143">
-      <screen x="0" y="0" width="2194" height="1194" />
+    <state width="1398" height="196" key="GridCell.Tab.0.right" timestamp="1578319702014">
+      <screen x="0" y="23" width="1440" height="830" />
     </state>
     <state width="2151" height="312" key="GridCell.Tab.0.right/0.0.2194.1194@0.0.2194.1194" timestamp="1576253240529" />
+    <state width="1398" height="196" key="GridCell.Tab.0.right/0.23.1440.830@0.23.1440.830" timestamp="1578319702014" />
     <state width="1447" height="311" key="GridCell.Tab.0.right/3840.1080.1920.1010/0.0.2194.1194@0.0.2194.1194" timestamp="1576333020143" />
     <state x="874" y="235" key="RollbackChangesDialog" timestamp="1576253309410">
       <screen x="0" y="0" width="2194" height="1194" />
@@ -360,50 +235,14 @@
       <screen x="0" y="0" width="2194" height="1194" />
     </state>
     <state x="540" y="512" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/3840.1080.1920.1010/0.0.2194.1194@0.0.2194.1194" timestamp="1576333148428" />
+    <state x="378" y="195" width="683" height="486" key="find.popup" timestamp="1578319109890">
+      <screen x="0" y="23" width="1440" height="830" />
+    </state>
+    <state x="378" y="195" width="683" height="486" key="find.popup/0.23.1440.830@0.23.1440.830" timestamp="1578319109890" />
     <state x="759" y="264" width="672" height="678" key="search.everywhere.popup" timestamp="1576333270157">
       <screen x="0" y="0" width="2194" height="1194" />
     </state>
     <state x="760" y="264" width="672" height="678" key="search.everywhere.popup/0.0.2194.1194@0.0.2194.1194" timestamp="1576251421614" />
     <state x="759" y="264" width="672" height="678" key="search.everywhere.popup/3840.1080.1920.1010/0.0.2194.1194@0.0.2194.1194" timestamp="1576333270157" />
-  </component>
-  <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/selectTimeout.go" />
-    <entry file="file://$PROJECT_DIR$/channel.go" />
-    <entry file="file:///usr/local/go/src/time/time.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="12680">
-          <caret line="637" column="5" selection-start-line="637" selection-start-column="5" selection-end-line="637" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/timer.go" />
-    <entry file="file://$PROJECT_DIR$/mutex.go" />
-    <entry file="file://$PROJECT_DIR$/condition.go" />
-    <entry file="file://$PROJECT_DIR$/socketSimpleServer.go" />
-    <entry file="file://$PROJECT_DIR$/socketSimpleClinet.go" />
-    <entry file="file://$PROJECT_DIR$/socketParallelServer.go" />
-    <entry file="file://$PROJECT_DIR$/socketClient.go" />
-    <entry file="file://$PROJECT_DIR$/udpSimpleServer.go" />
-    <entry file="file:///usr/local/go/src/net/udpsock.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="237">
-          <caret line="149" column="18" selection-start-line="149" selection-start-column="18" selection-end-line="149" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///usr/local/go/src/strings/strings.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="16700">
-          <caret line="839" column="30" selection-start-line="839" selection-start-column="30" selection-end-line="839" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///usr/local/go/src/builtin/builtin.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1400">
-          <caret line="70" column="5" selection-start-line="70" selection-start-column="5" selection-end-line="70" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
   </component>
 </project>
