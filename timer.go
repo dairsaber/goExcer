@@ -28,7 +28,7 @@ func main() {
 	}()
 	time.Sleep(time.Second * 2)
 	myTimer2.Stop()
-	fmt.Printf("我是主go程中断myTimer2，所以子go程中无法执行，也就是不会打印那段《我是子go程！》的文字！")
+	fmt.Printf("我是主go程中断myTimer2，所以子go程中无法执行，也就是不会打印那段《我是子go程！》的文字！\n")
 	//循环定时
 	times := 0
 	ticker := time.NewTicker(time.Second)
