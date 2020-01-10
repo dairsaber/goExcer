@@ -31,4 +31,5 @@ func main() {
 	fmt.Println("circle01==>r:25.63,area is ===>", circle01.area())
 	//======复杂盒子面向对象的案例======
 	ComplexObjectFunc()
+	ExtendMethodDemoFunc()
 }

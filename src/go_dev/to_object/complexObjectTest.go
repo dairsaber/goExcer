@@ -27,6 +27,7 @@ type Box struct {
 	width, height, length float64
 	color                 Color
 }
+
 //Volumn 获得盒子的体积
 func (b *Box) Volumn() float64 {
 	return b.height * b.length * b.width
@@ -52,11 +53,13 @@ func (bl BoxList) GetMaxVolBox() *Box {
 func (b *Box) SetColor(c Color) {
 	b.color = c
 }
+
 //GetColorName 获取盒子的颜色的名称
-func(b *Box) GetColorName() string{
-colorNames := []string{"WHITE","RED",	"BLACK","GREEN","BLUE"}
+func (b *Box) GetColorName() string {
+	colorNames := []string{"WHITE", "RED", "BLACK", "GREEN", "BLUE"}
 	return colorNames[byte(b.color)]
 }
+
 //CreateBoxes 随机生成几个盒子
 func CreateBoxes() BoxList {
 	boxLength := 3 + rand.Intn(7)
