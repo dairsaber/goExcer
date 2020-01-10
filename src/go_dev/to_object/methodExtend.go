@@ -1,7 +1,7 @@
 package main
 
 import "fmt"
-
+//Person 人类
 type Person struct {
 	name string
 	age  int
@@ -10,7 +10,7 @@ type Person struct {
 func (p Person) sayHi() {
 	fmt.Printf("Hi~ my name is %s, %d years old.\n",p.name,p.age)
 }
-
+//Student 学生类
 type Student struct {
 	Person
 	studentNO string
